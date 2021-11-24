@@ -9,6 +9,8 @@ import { SobreComponent } from './institucional/sobre/sobre.component';
 import { ContatoComponent } from './institucional/contato/contato.component';
 import { RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
+import { DatabindingComponent } from './demos/databinding/databinding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { APP_BASE_HREF } from '@angular/common';
     HomeComponent,
     FooterComponent,
     SobreComponent,
-    ContatoComponent
+    ContatoComponent,
+    DatabindingComponent
   ],
   imports: [
     BrowserModule,
-    [RouterModule.forRoot(rootRouterConfig,{ useHash: false })]
+    [RouterModule.forRoot(rootRouterConfig,{ useHash: false })],
+    FormsModule
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'}
