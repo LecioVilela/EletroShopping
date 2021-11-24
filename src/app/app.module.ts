@@ -1,3 +1,4 @@
+import { ProdutoService } from './produtos/produtos.service';
 import { rootRouterConfig } from './app.routes';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
+    ProdutoService,
     {provide: APP_BASE_HREF, useValue: '/'}
   ],
   bootstrap: [AppComponent]
