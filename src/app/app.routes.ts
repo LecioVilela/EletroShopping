@@ -1,3 +1,4 @@
+import { ListaProdutoComponent } from './produtos/lista-produto/lista-produto.component';
 import { DatabindingComponent } from './demos/databinding/databinding.component';
 import { ContatoComponent } from './institucional/contato/contato.component';
 import { SobreComponent } from './institucional/sobre/sobre.component';
@@ -9,5 +10,6 @@ export const rootRouterConfig: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'contato', component: ContatoComponent },
     { path: 'sobre', component: SobreComponent },
-    { path: 'feature-data-binding', component: DatabindingComponent }
+    { path: 'feature-data-binding', component: DatabindingComponent },
+    { path: 'produto', component: ListaProdutoComponent}
 ];
